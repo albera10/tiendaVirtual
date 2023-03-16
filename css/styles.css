@@ -1,6 +1,8 @@
 /* Font de google */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300;400;500;700&display=swap');
+/*@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');*/
 
+<<<<<<< HEAD
 /* Formato global */
 html {
     /*font-family: 'Lato', sans-serif;*/
@@ -12,36 +14,80 @@ html {
     box-sizing: inherit;
 }
 
+=======
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Formato globales */
+>>>>>>> 05528fd (Seguimos implementando los estilos)
 a {
     text-decoration: none;
     color: #000;
 }
 
 .contenedor {
+<<<<<<< HEAD
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Formato especifico */
 .nombre-sitio {
+=======
+    max-width: 1200px;    
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header y Navegación */
+.nombre-sitio{
+>>>>>>> 05528fd (Seguimos implementando los estilos)
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
 }
 
+<<<<<<< HEAD
 /* Header y navegación */
 .nombre-sitio span {
     color: #037bc0;
 }
 
+=======
+.nombre-sitio span {
+    color: #037bc0;
+}
+>>>>>>> 05528fd (Seguimos implementando los estilos)
 .contenedor-navegacion {
     border-top: 1px solid #e1e1e1;
 }
 
+<<<<<<< HEAD
 .nav-principal {   
    padding: 20px 0;
    display: flex;
    
+=======
+.nav-principal {       
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.contenedor a:hover {    
+    color: #037bc0;
+>>>>>>> 05528fd (Seguimos implementando los estilos)
 }
 
 .hero {
@@ -49,4 +95,35 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+<<<<<<< HEAD
 }
+=======
+}
+
+/* Categorías */
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background: #037bc0;
+    color: #e1e1e1;
+    border-bottom-right-radius: 10px;    
+}
+
+.listado-categoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+
+
+>>>>>>> 05528fd (Seguimos implementando los estilos)
