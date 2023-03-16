@@ -2,9 +2,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 /* Formato global */
-body {
+html {
     /*font-family: 'Lato', sans-serif;*/
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Formato especifico */
+.nombre-sitio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Header y navegación */
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal {   
+   padding: 20px 0;
+   display: flex;
+   
+}
+
+.hero {
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
