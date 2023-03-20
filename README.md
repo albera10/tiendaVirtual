@@ -1,3 +1,3 @@
 # tiendaVirtual
 
-Programada en html 5 y css 3
+Curso de udemy "CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos"
