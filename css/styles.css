@@ -22,6 +22,11 @@ a {
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /* Header y navegación */
 .nombre-sitio {
     margin-top: 50px;
@@ -51,3 +56,25 @@ a {
 }
 
 /* Categoria de productos */
+.categoria h2 {
+    text-align: center;
+}
+
+.lista-categoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;    
+}
+
+.categoria a:hover {
+    background: #037bc0;
+    color: #fff;
+    border-radius: 0 0 10px 0;
+}
