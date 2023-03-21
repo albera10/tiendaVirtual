@@ -1,10 +1,14 @@
 /* Font de google */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 html {
     /*font-family: 'Lato', sans-serif;*/
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;        
 }
 
 *, *:after {
@@ -12,6 +16,9 @@ html {
 }
 
 /* Formatos globales */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -32,6 +39,7 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    font-size: 50px;
 }
 .nombre-sitio span {
     color: #037bc0;
