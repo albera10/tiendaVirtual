@@ -3,29 +3,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 html {
-    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;        
+    font-size: 62.5%;
 }
 
 *, *:after {
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
 /* Formatos globales */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
+    margin: 0 0 5rem 0;
 }
+
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2;
+}
+
 a {
     text-decoration: none;
     color: #000;
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -36,11 +56,11 @@ img {
 
 /* Header y navegación */
 .nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;    
 }
+
 .nombre-sitio span {
     color: #037bc0;
 }
@@ -50,20 +70,25 @@ img {
 }
 
 .nav-principal {
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 2rem;
     }
 
 .hero {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    background-position: 1px 1px;
+    height: 55rem;
 }
 
 /* Categoria de productos */
+.categoria {
+   padding-top: 5rem;
+}
+
 .categoria h2 {
     text-align: center;
 }
@@ -71,18 +96,42 @@ img {
 .lista-categoria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
 
 .categoria a {
     text-align: center;
     display: block;
-    padding: 20px;
-    font-size: 20px;    
+    padding: 2rem;
+    font-size: 2rem;    
 }
 
 .categoria a:hover {
     background: #037bc0;
     color: #fff;
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 1rem 0;
+}
+
+/* Bloque nosotros */
+.sobre-nosotros {
+    background-image: linear-gradient(
+        to right,  
+        transparent 50%, 
+        #037bc0 50%, 
+        #037bc0 100% ), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+}
+
+.texto-nosotros {
+    grid-column: 2 / 3;
+    color: #fff;
 }
